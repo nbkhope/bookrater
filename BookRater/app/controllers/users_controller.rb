@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
+  before_each :set_user, only: [:show, :update, :destroy]
+
   def index
     @users = User.all
     render json: @users
   end
 
   def show
-    @user = User.find(params[:id])
     render json: @user
   end
 
@@ -28,7 +29,6 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
 
     if @user.update(user_params)
       head :no_content
@@ -39,6 +39,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @user.destroy
+    head :no_content
   end
 
   private
