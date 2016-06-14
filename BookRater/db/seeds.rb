@@ -3,7 +3,7 @@
 	user = User.create(
 		username: Faker::Internet.user_name,
 		email: Faker::Internet.email,
-		password: "1",#Faker::Internet.password,
+		#password: "1",#Faker::Internet.password,
 	)
 end
 
@@ -31,7 +31,7 @@ User.all.each do |user|
 	# Add favorite books to each user
 	rand(0..10).times do
 		Favorite.create(
-			user: user
+			user: user,
 			book: Book.all.sample,
 		)
 	end
