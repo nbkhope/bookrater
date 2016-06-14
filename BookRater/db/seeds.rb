@@ -27,3 +27,20 @@ end
 	end
 end
 
+User.all.each do |user|
+	# Add favorite books to each user
+	rand(0..10).times do
+		Favorite.create(
+			user: user
+			book: Book.all.sample,
+		)
+	end
+
+	# Generate fake likes for reviews
+	rand(0..10).times do
+		Like.create(
+			user: user,
+			review: Review.all.sample,
+		)
+	end
+end
