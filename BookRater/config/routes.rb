@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # Define a namespace for the API
   namespace :api do #, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/' do
     
-    #scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
       get 'sessions/new'
 
       post 'sessions/create'
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       end
 
       #devise_for :users
-    #end
+    end
 
   end
   
