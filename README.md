@@ -26,8 +26,12 @@ Run the Rails server:
 bin/rails s
 ```
 
-To run the frontend server, use the following command from the `App/` directory
+The server will be available at http://localhost:3000
+
+To run the **frontend server**, use the following command from the `App/` directory
 
 ```
 ruby -run -e httpd . -p 9000
 ```
+
+The frontend server will be available at http://localhost:9000
