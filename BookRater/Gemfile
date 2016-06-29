@@ -7,7 +7,6 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
-
 gem 'pg'
 
 # To allow for Cross-Origin Resource Sharing
@@ -40,3 +39,16 @@ group :development, :test do
 	gem "factory_girl_rails"
 	gem 'ffaker'
 end
+
+group :production do
+	gem 'rails_12factor'
+end
+
+group :development do
+	gem 'pry-rails'
+	gem 'byebug'
+end
+
+gem 'active_model_serializers'
+
+gem "devise"
