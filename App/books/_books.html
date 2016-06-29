@@ -1,0 +1,14 @@
+<h1>All Books</h1>
+
+<div class="row panel panel-default" ng-repeat="book in books">
+  <div class="col-xs-4">
+    <img class="book-cover" ng-src="{{book.cover}}">
+  </div>
+
+  <div class="col-xs-8">
+    <h2>{{book.title}} by <h3>{{book.author}}</h3></h2>
+    <p>
+      {{book.summary}}
+    </p>
+  </div>
+</div>
