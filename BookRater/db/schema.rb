@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 20160629015123) do
   end
 
   add_index "users", ["auth_token"], name: "index_users_on_auth_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", using: :btree
 
   add_foreign_key "favorites", "books"
   add_foreign_key "favorites", "users"
