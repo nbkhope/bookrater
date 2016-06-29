@@ -116,6 +116,8 @@ GEM
       rspec-mocks (~> 3.4.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
     spring (1.7.1)
     sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
@@ -141,6 +143,7 @@ DEPENDENCIES
   rails (= 4.2.6)
   rails-api
   rspec-rails
+  shoulda-matchers
   spring
 
 BUNDLED WITH
