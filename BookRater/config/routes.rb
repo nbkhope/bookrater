@@ -1,14 +1,28 @@
+require 'api_constraints'
+
 Rails.application.routes.draw do
-  get 'sessions/new'
 
-  post 'sessions/create'
+  # Define a namespace for the API
+  namespace :api do #, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/' do
+    
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+      get 'sessions/new'
 
-  delete 'sessions/destroy'
+      post 'sessions/create'
 
-  resources :users
-  resources :books do
-    resources :reviews
+      delete 'sessions/destroy'
+
+      resources :users
+
+      resources :books do
+        resources :reviews
+      end
+
+      #devise_for :users
+    end
+
   end
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
