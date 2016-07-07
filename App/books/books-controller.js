@@ -1,7 +1,10 @@
 angular.module('bookRater')
 
 .controller('BookCtrl', ['$scope', 'booksFactory', function($scope, booksFactory) {
+  var ctrl = this;
 
-  $scope.books = booksFactory.books;
+  ctrl.loading = false;
+
+  ctrl.books = booksFactory.books;
 
 }]);
