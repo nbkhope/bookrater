@@ -34,4 +34,12 @@ To run the **frontend server**, use the following command from the `App/` direct
 ruby -run -e httpd . -p 9000
 ```
 
+Alternatively, you can also use **serve** to run the frontend server, if you are in the root directory of the repository:
+
+```
+serve -p 9000 App/
+```
+
+(use `npm install -g serve` to install serve)
+
 The frontend server will be available at http://localhost:9000
