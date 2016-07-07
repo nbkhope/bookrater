@@ -1,15 +1,15 @@
 angular.module('bookRater')
 
-.controller('BooksCtrl', ['$scope', 'BooksModel', function($scope, BooksModel) {
+.controller('BookCtrl', ['$scope', '$stateParams', 'BooksModel', function($scope, $stateParams, BooksModel) {
   var ctrl = this;
 
   ctrl.loading = false;
 
-  ctrl.getBooks = function() {
-    BooksModel.all()
+  ctrl.getBook = function(id) {
+    BooksModel.get(id)
       .then(function(result) {
         console.log(result);
-        ctrl.books = result;
+        ctrl.book = result;
       })
       .catch(function(error) {
         console.log("Failed to get books");
@@ -17,6 +17,6 @@ angular.module('bookRater')
       });
   };
 
-  ctrl.getBooks();
+  ctrl.getBook($stateParams.id);
 
 }]);
