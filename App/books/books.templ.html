@@ -1,0 +1,20 @@
+<h1>All Books</h1>
+
+ <div ng-repeat="book in ctrl.books">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" >
+  <div class="panel panel-default" >
+    <!-- <div class="row"> -->
+      <!-- <div class="col-xs-4"> -->
+        <img class="book-cover" ng-src="{{book.cover}}">
+      <!-- </div> -->
+
+      <!-- <div class="col-xs-8"> -->
+        <h2><a href="#/books/{{book.id}}">{{book.title}}</a> by <h3>{{book.author}}</h3></h2>
+        <!-- <p>
+          {{book.summary}}
+        </p> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    </div>
+  </div>
+ </div>

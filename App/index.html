@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookRater">
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>BookRater</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css">
+	<!-- Custom Style -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- Hamburger button when screen is too small -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bookrater-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">BookRater</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bookrater-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="/#/books">Browse Books</a></li>
+						<li><a href="/#/favorites">Favorites</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/#/signup">Sign Up</a></li>
+						<li><a href="/#/login">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div class="row">
+			<ui-view></ui-view>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			BookRater by <a href="http://github.com/nbkhope">nbkhope</a>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<!-- Angular UI Router -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Custom script -->
+	<script src="app.js"></script>
+	<!-- <script src="home/main-controller.js"></script> -->
+	<script src="common/models/books-model.js"></script>
+	<script src="books/books-controller.js"></script>
+	<script src="books/book-controller.js"></script>
+	<script src="home/login-controller.js"></script>
+</body>
+</html>
