@@ -27,6 +27,14 @@ angular.module('bookRater', ['ui.router'])//, 'templates'])
       controller: 'LoginCtrl',
       controllerAs: 'ctrl'
     })
+
+    .state('signup', {
+      url: '/signup',
+      templateUrl: 'home/signup.templ.html',
+      // controller: 'SignupCtrl',
+      // controllerAs: 'ctrl'
+    })
+
     ;
 
   // Set default state if no routes match
