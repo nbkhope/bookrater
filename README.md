@@ -8,7 +8,7 @@ Discover new books and find out what people are saying about them.
 
 ## Installation
 
-### Backend API
+### Backend API (BookRater/ directory)
 
 Run bundle to install all dependencies
 
@@ -30,7 +30,7 @@ bin/rails s
 
 The server will be available at <http://localhost:3000>
 
-### Frontend
+### Frontend (App/ directory)
 
 To run the **frontend server**, use the following command from the `App/` directory
 
