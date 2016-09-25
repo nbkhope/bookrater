@@ -2,9 +2,17 @@
 
 Discover new books and find out what people are saying about them.
 
+## User Stories
+
+[Click here to see the User Stories](user_stories.md)
+
 ## Database Schema
 
 ![Database Schema](schema.png)
+
+## Wireframes
+
+[Click here to see the wireframes](wireframes.pdf)
 
 ## Installation
 
