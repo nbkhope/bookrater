@@ -54,7 +54,7 @@ angular.module('bookRater', ['ui.router'])
     ;
 
   // Set default state if no routes match
-  $urlRouterProvider.otherwise('books');
+  $urlRouterProvider.otherwise('home');
 
 });
 
