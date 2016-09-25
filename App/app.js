@@ -19,7 +19,15 @@ angular.module('bookRater', ['ui.router'])//, 'templates'])
           return booksFactory.getAll();
         }]
       }
-    });
+    })
+
+    .state('login', {
+      url: '/login',
+      templateUrl: 'home/login.templ.html',
+      controller: 'LoginCtrl',
+      controllerAs: 'ctrl'
+    })
+    ;
 
   // Set default state if no routes match
   $urlRouterProvider.otherwise('home');
