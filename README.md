@@ -8,6 +8,8 @@ Discover new books and find out what people are saying about them.
 
 ## Installation
 
+### Backend API
+
 Run bundle to install all dependencies
 
 ```
@@ -26,7 +28,9 @@ Run the Rails server:
 bin/rails s
 ```
 
-The server will be available at http://localhost:3000
+The server will be available at <http://localhost:3000>
+
+### Frontend
 
 To run the **frontend server**, use the following command from the `App/` directory
 
@@ -42,4 +46,4 @@ serve -p 9000 App/
 
 (use `npm install -g serve` to install serve)
 
-The frontend server will be available at http://localhost:9000
+The frontend server will be available at <http://localhost:9000>
