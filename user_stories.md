@@ -8,9 +8,9 @@
 
 Doris is a 27-year-old woman who loves to read. She often reads in her spare time and typically finishes a book in one or two weeks. An avid reader, she loves to discover new things to read. She also loves to talk about the books she has read. But she leads a busy life and often does not have time to talk about her world of books. Some people don't really read the books she does.
 
-Enter BookRater: now you can see what others had to say about a certain book, either because you want to read it or you just want to hear other people's interpretation and what they learned about that book. As a user of BookRater, Doris can browse the many books and choose one to see more details about it. She can make sure that is the book she is going to read next and later on leave a review if she wishes. She can also read what other people had to say about the book. She can like those reviews. She can add the book to a favorites list.
+Enter **BookRater**: now you can see what others had to say about a certain book, either because you want to read it or you just want to hear other people's interpretation and what they learned about that book. As a user of BookRater, Doris can browse the many books and choose one to see more details about it. She can make sure that is the book she is going to read next and later on leave a review if she wishes. She can also read what other people had to say about the book. She can like those reviews. She can add the book to a favorites list.
 
-## Stories
+## Main Stories
 
 ```
 A user can browse books
