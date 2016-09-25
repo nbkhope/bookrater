@@ -8,16 +8,37 @@
 	<title>BookRater</title>
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Bootstrap Theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css">
 	<!-- Custom Style -->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
 <body>
 	<header>
-		This is the header
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- Hamburger button when screen is too small -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bookrater-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">BookRater</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bookrater-navbar">
+					<ul class="nav navbar-nav">
+
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/#/signup">Sign Up</a></li>
+						<li><a href="/#/login">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 
 	<main class="container">
@@ -26,8 +47,10 @@
 		</div>
 	</main>
 
-	<footer>
-		This is the footer
+	<footer class="site-footer">
+		<div class="container">
+			BookRater by <a href="http://github.com/nbkhope">nbkhope</a>
+		</div>
 	</footer>
 
 	<!-- jQuery -->
